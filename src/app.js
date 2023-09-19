@@ -1,14 +1,14 @@
 const fs = require("fs");
 const mongoose = require('mongoose');
-require('dotenv').config();
+const dotenv = require('dotenv');
 const { MerkleTree } = require('merkletreejs')
 const keccak256 = require('keccak256');
 const {merkleproof} = require('../src/models/userModal');
 mongoose.set('strictQuery', false);
 
-// if(process.env.NODE_ENV != 'production') {
-//   dotenv.config();
-// }
+if(process.env.NODE_ENV != 'production') {
+  dotenv.config();
+}
 
 const CONNECTION = process.env.CONNECTION;  // Got the connection url
 
