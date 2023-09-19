@@ -6,9 +6,9 @@ const keccak256 = require('keccak256');
 const {merkleproof} = require('../src/models/userModal');
 mongoose.set('strictQuery', false);
 
-if(process.env.NODE_ENV != 'production') {
-  dotenv.config();
-}
+// if(process.env.NODE_ENV != 'production') {
+//   dotenv.config();
+// }
 
 const CONNECTION = process.env.CONNECTION;  // Got the connection url
 
