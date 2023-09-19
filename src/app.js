@@ -1,6 +1,6 @@
 const fs = require("fs");
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+require('dotenv').config();
 const { MerkleTree } = require('merkletreejs')
 const keccak256 = require('keccak256');
 const {merkleproof} = require('../src/models/userModal');

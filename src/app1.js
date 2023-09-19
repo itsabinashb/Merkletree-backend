@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+require('dotenv').config();
 const router = require('./routes/user.routes');
 const app = express();
 mongoose.set('strictQuery',false);
